@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "fullname": "srikanth",
+      "email": "srikanth@gmail.com",
+      "region": "India",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "fullname": "sri",
+      "email": "sri@gmail.com",
+      "region": "London",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "fullname": "sd",
+      "email": "as@gmail.com",
+      "region": "Japan",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "fullname": "msys",
+      "email": "msys@msys.com",
+      "region": "France",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "fullname": "msys",
+      "email": "msys@gm.com",
+      "region": "U.K",
+      "gender": "female",
+      "id": 5
+    },
+    {
+      "fullname": "msys",
+      "email": "msys@msys.com",
+      "region": "U.S",
+      "gender": "female",
+      "id": 6
+    }
+  ]
+}
