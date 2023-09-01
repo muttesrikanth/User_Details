@@ -51,3 +51,14 @@ label{
 .card{
   background-color: #265f26;
 }
+
+.white-background{
+ width: 100vw;
+ height: 100vh;
+ background-color: #fff;
+ margin:0px auto;
+}
+.imageReSize{
+  width: 100vw;
+  height: 100vh;
+}

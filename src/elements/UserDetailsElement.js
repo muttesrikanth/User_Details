@@ -8,6 +8,7 @@ const UserDetailsElement = () => {
         <>
             <div className="d-flex flex-row justify-content-around">
                 <UserDetailsForm />
+                
                 <div className="m-3 mt-0">
                     <UserDetailsComponent />
                 </div>                        

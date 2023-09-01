@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import '../App.css';
 const TableComponent = ({tableData,formDataDeleteHandeller,formDataEditHandeller}) => {
     return (
         <>
@@ -32,7 +33,7 @@ const TableComponent = ({tableData,formDataDeleteHandeller,formDataEditHandeller
                                 >
                             edit
                                 </button>
-                                <Link to={'/views/'+value.id}>
+                                <Link to={'/'+value.id}>
                                     <button className="btn btn-warning btn-sm m-1">view</button>
                                 </Link>
                                 <button
@@ -47,14 +48,15 @@ const TableComponent = ({tableData,formDataDeleteHandeller,formDataEditHandeller
                     ))}
                 </tbody>
             </table>
+    
         </>
     );
 };
 
 TableComponent.propTypes={
-    tableData:PropTypes.array,
-    formDataDeleteHandeller:PropTypes.func,
-    formDataEditHandeller:PropTypes.func
+    tableData:PropTypes.array.isRequired,
+    formDataDeleteHandeller:PropTypes.func.isRequired,
+    formDataEditHandeller:PropTypes.func.isRequired
 };
 
 export default React.memo(TableComponent);

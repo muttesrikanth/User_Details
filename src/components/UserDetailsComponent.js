@@ -2,6 +2,7 @@ import React, { useCallback, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { context } from '../App';
 import TableComponent from './TableComponent';
+// const TableComp=React.lazy(()=>import('./TableComponent'));
 // import PropsTypes from 'prop-types';
 import '../App.css';
 
@@ -32,10 +33,12 @@ const UserDetailsComponent = () => {
 
     return (
         <>
-            <TableComponent 
+            {tableData&& <TableComponent 
                 tableData={tableData} 
                 formDataDeleteHandeller={formDataDeleteHandeller} 
-                formDataEditHandeller={formDataEditHandeller}/>
+                formDataEditHandeller={formDataEditHandeller}/>}
+          
+            
         </>
     );
 };
@@ -45,7 +48,7 @@ const UserDetailsComponent = () => {
 //     setEditId:PropsTypes.func.isRequired,
 //     formOperations:PropsTypes.string.isRequired, 
 //     setFormOperations:PropsTypes.func.isRequired, 
-//     url:PropsTypes.string.isRequired
-// };
+//     url:PropsTypes.string.isRequired,
+//}
 
 export default React.memo(UserDetailsComponent);

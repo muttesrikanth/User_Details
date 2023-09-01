@@ -10,10 +10,11 @@ const UserDetailView = () => {
         axios.get(url+ id).then(Resp=>setCardData({fullname:Resp.data.fullname,email:Resp.data.email,region:Resp.data.region,gender:Resp.data.gender}));
     };
     useEffect( ()=>{getDataFromId();},[id]);
+    const linkUrl=`/${id}/image`;
     return (
         <div className='card-background' >
             <div className="card" style={{width: '18rem'}}>
-                <img src='https://res.cloudinary.com/dx0fji5gh/image/upload/v1686736081/samples/people/image_fr6q0i.jpg' height='200px' className="card-img-top" alt="..."/>
+                <Link to={linkUrl} ><img src='https://res.cloudinary.com/dx0fji5gh/image/upload/v1686736081/samples/people/image_fr6q0i.jpg' height='200px' className="card-img-top" alt="..."/></Link>  
                 <div className="card-body">
                     <h2 className="card-title text-white">Name : <span className='text-danger'>{cardData.fullname}</span></h2>
                     <h5 className="card-title text-white">Email : <span className='text-info'>{cardData.email}</span></h5>
