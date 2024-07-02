@@ -1,3 +1,26 @@
+# User Details Project
+
+## Description
+
+This project involves a form that collects data from the user and displays it in a table. The form is aesthetically pleasing and includes form validations using the Formik library. A Bootstrap navbar is used for a sample React Router and breadcrumbs are implemented in the app. Users can perform CRUD operations (Create, Read, Update, and Delete) on the table. A local JSON server is used for these operations. The form displays the status of each operation (Read, Update, Delete, or Create) and includes proper error handling. The project follows a proper folder structure and uses ESLint for code quality.
+
+## Features
+
+- **Form Data Collection:** Collect user data through a well-designed form.
+- **Form Validations:** Validate form inputs using the Formik library.
+- **Bootstrap Navbar:** Navigate using a Bootstrap navbar.
+- **React Router and Breadcrumbs:** Implement navigation with React Router and breadcrumbs.
+- **CRUD Operations:** Perform Create, Read, Update, and Delete operations on the user table.
+- **Local JSON Server:** Use a local JSON server for data operations.
+- **Operation Status Display:** Show the status of each operation (Read, Update, Delete, Create) on the form.
+- **Error Handling:** Properly handle errors during operations.
+- **Code Quality:** Follow a proper folder structure and ensure code quality with ESLint.
+
+## Getting Started
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,6 +36,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+### `json-server --watch db.json --port 3030`
+
+Runs the JSON server.\
+It watches for changes in `db.json` and serves the API on port 3030.
 
 ### `npm test`
 
